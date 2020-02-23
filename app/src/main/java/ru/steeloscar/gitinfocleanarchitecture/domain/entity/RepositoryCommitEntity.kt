@@ -2,7 +2,7 @@ package ru.steeloscar.gitinfocleanarchitecture.domain.entity
 
 import ru.steeloscar.gitinfocleanarchitecture.data.repository.api.model.RepositoryCommit
 
-class RepositoryCommitEntity(
+data class RepositoryCommitEntity(
     val message: String?,
     val date: String?,
     val sha: String?,

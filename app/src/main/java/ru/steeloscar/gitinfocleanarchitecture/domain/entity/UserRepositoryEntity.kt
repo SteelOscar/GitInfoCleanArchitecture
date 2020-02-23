@@ -1,6 +1,6 @@
 package ru.steeloscar.gitinfocleanarchitecture.domain.entity
 
-class UserRepositoryEntity(
+data class UserRepositoryEntity(
     val repoName: String?,
     val forkRepo: Boolean?,
     val archivedRepo: Boolean?,

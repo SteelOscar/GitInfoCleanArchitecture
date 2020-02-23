@@ -1,6 +1,6 @@
 package ru.steeloscar.gitinfocleanarchitecture.domain.entity
 
-class UpdateUserProfileEntity(
+data class UpdateUserProfileEntity(
     val name: String?,
     val email: String?,
     val blog: String?,

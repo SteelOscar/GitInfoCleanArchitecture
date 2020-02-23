@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.view.viewPagerFragments.OverviewFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshOverview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp">
+
+        <!--    User Profile   -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/overviewDataContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/gray2"
+            android:visibility="gone">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray2">
+
+                        <LinearLayout
+                            android:id="@+id/userInfoOverview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="100"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/userAvatarOverviewContainer"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="45"
+                                app:cardCornerRadius="7dp">
+
+                                <ImageView
+                                    android:id="@+id/userAvatarOverview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="centerCrop"/>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="55"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/userNameOverview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:textSize="17sp"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:id="@+id/userLoginOverview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"/>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/lite_gray"
+                                    android:layout_marginBottom="5dp"/>
+
+                                <TextView
+                                    android:id="@+id/userEmailOverview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:drawablePadding="5dp"
+                                    android:drawableLeft="@drawable/ic_email_white_20dp"
+                                    android:drawableStart="@drawable/ic_email_white_20dp"/>
+
+                                <TextView
+                                    android:id="@+id/userBlogOverview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:drawablePadding="5dp"
+                                    android:drawableLeft="@drawable/ic_public_white_20dp"
+                                    android:drawableStart="@drawable/ic_public_white_20dp"/>
+
+                                <TextView
+                                    android:id="@+id/userCompanyOverview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:drawablePadding="5dp"
+                                    android:drawableLeft="@drawable/ic_people_white_20dp"
+                                    android:drawableStart="@drawable/ic_people_white_20dp"/>
+
+                                <TextView
+                                    android:id="@+id/userLocationOverview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:drawablePadding="5dp"
+                                    android:drawableLeft="@drawable/ic_location_on_white_20dp"
+                                    android:drawableStart="@drawable/ic_location_on_white_20dp"/>
+
+                                <TextView
+                                    android:id="@+id/userUpdateOverview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:drawablePadding="5dp"
+                                    android:drawableLeft="@drawable/ic_update_white_20dp"
+                                    android:drawableStart="@drawable/ic_update_white_20dp"/>
+
+                                <TextView
+                                    android:id="@+id/userJoinedOverview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:drawablePadding="5dp"
+                                    android:drawableLeft="@drawable/ic_create_white_20dp"
+                                    android:drawableStart="@drawable/ic_create_white_20dp"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/userBioOverview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_below="@id/userInfoOverview"/>
+
+                    </RelativeLayout>
+
+                    <!--    Additional information  -->
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/additionalInfoOverview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <View
+                                android:id="@+id/separator"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@color/lite_gray"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="17sp"
+                                android:textStyle="bold"
+                                android:layout_marginBottom="5dp"
+                                android:text="@string/additional_info"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_below="@id/additionalInfoOverview"
+                            android:weightSum="100"
+                            android:orientation="horizontal"
+                            android:baselineAligned="false">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="70"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/headerFollowersOverview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="@string/followers"/>
+
+                                <TextView
+                                    android:id="@+id/headerFollowingOverview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="@string/following"/>
+
+                                <TextView
+                                    android:id="@+id/headerPubGistOverview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="@string/public_gists"/>
+
+                                <TextView
+                                    android:id="@+id/headerPrivateGistOverview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="@string/private_gists"/>
+
+                                <TextView
+                                    android:id="@+id/headerPubReposOverview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="@string/public_repo"/>
+
+                                <TextView
+                                    android:id="@+id/headerOwnPrivateReposOverview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="@string/owned_private_repo"/>
+
+                                <TextView
+                                    android:id="@+id/headerTotPrivateReposOverview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="@string/total_private_repo"/>
+
+                                <TextView
+                                    android:id="@+id/headerDiskOverview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="@string/disk_usage"/>
+
+                                <TextView
+                                    android:id="@+id/headerAuthOverview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="@string/two_factor_auth"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="30"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/userFollowersOverview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_gravity="center"/>
+
+                                <TextView
+                                    android:id="@+id/userFollowingOverview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_gravity="center"/>
+
+                                <TextView
+                                    android:id="@+id/userPubGistOverview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_gravity="center"/>
+
+                                <TextView
+                                    android:id="@+id/userPrivateGistOverview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_gravity="center"/>
+
+                                <TextView
+                                    android:id="@+id/userPubReposOverview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_gravity="center"/>
+
+                                <TextView
+                                    android:id="@+id/userOwnPrivateReposOverview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_gravity="center"/>
+
+                                <TextView
+                                    android:id="@+id/userTotPrivateReposOverview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_gravity="center"/>
+
+                                <TextView
+                                    android:id="@+id/userDiskOverview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_gravity="center"/>
+
+                                <TextView
+                                    android:id="@+id/userAuthOverview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_gravity="center"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <ProgressBar
+        android:id="@+id/progressOverview"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

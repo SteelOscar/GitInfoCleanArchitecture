@@ -20,21 +20,29 @@ class MainRepositoryImpl private constructor(private val token: String): MainRep
         UserProfileEntityMapper.map( gitHubAPI.getUser(token))
 
     override fun gerRepositories(): Observable<ArrayList<UserRepositoryEntity>>  =
-        ArrayListUserRepositoryEntityMapper.map(gitHubAPI.getRepositories(token))
+        gitHubAPI.getRepositories(token).map {
+            ArrayListUserRepositoryEntityMapper.map(it)
+        }
 
     override fun getRepositoryCommits(userRepository: String, repository: String): Observable<ArrayList<RepositoryCommitEntity>> =
-        ArrayListRepositoryCommitEntityMapper.map(gitHubAPI.getRepositoryCommits(token, userRepository, repository))
+        gitHubAPI.getRepositoryCommits(token, userRepository, repository).map {
+            ArrayListRepositoryCommitEntityMapper.map(it)
+        }
 
     override fun getStars(): Observable<ArrayList<UserRepository>> = gitHubAPI.getStars(token)
 
     override fun getFollowersUsers(): Observable<ArrayList<UserProfileEntity>> =
-        ArrayListUserProfileEntityMapper.map(gitHubAPI.getFollowers(token))
+        gitHubAPI.getFollowers(token).map {
+            ArrayListUserProfileEntityMapper.map(it)
+        }
 
     override fun getOtherUserProfile(login: String): Observable<UserProfileEntity> =
         UserProfileEntityMapper.map(gitHubAPI.getUserInfo(login, token))
 
     override fun getFollowingUsers(): Observable<ArrayList<UserProfileEntity>>  =
-        ArrayListUserProfileEntityMapper.map(gitHubAPI.getFollowingUsers(token))
+        gitHubAPI.getFollowingUsers(token).map {
+            ArrayListUserProfileEntityMapper.map(it)
+        }
 
     override fun updateUserProfile(updateUserProfileEntity: UpdateUserProfileEntity): Observable<UserProfileEntity> =
         UserProfileEntityMapper.map( gitHubAPI.updateProfile(UpdateUserProfileEntityMapper.forwardMap(updateUserProfileEntity), token))

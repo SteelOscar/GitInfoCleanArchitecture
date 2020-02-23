@@ -1,6 +1,6 @@
 package ru.steeloscar.gitinfocleanarchitecture.domain.entity
 
-class UserProfileEntity(
+data class UserProfileEntity(
     var avatarUrl: String?,
     var name: String?,
     var login: String?,

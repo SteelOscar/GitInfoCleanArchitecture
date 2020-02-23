@@ -40,7 +40,7 @@ data class UserProfile(
     var two_factor_authentication: Boolean?,
     var planPOJO: UserPlan
 ) {
-    inner class UserPlan(
+    data class UserPlan(
         var name: String?,
         var space: Int?,
         var collaborators: Int?,

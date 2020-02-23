@@ -5,13 +5,11 @@ import android.net.Uri
 import android.view.View
 import android.widget.Button
 import android.widget.ImageView
-import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.bumptech.glide.Glide
 import ru.steeloscar.gitinfocleanarchitecture.R
-import ru.steeloscar.gitinfocleanarchitecture.data.repository.api.model.RepositoryCommit
 
 fun SwipeRefreshLayout.configure() {
     setColorSchemeColors(ContextCompat.getColor(context, R.color.gray2))
@@ -61,13 +59,7 @@ fun TextView.setDate(type: String, date: String?) {
     if (date.isNullOrBlank()) {
         visibility = View.GONE
     } else {
-        val formatDate = "$type ${date.substring(
-            8..9
-        )}.${date.substring(
-            5..6
-        )}.${date.substring(
-            0..3
-        )}"
+        val formatDate = "$type ${formatDate(date)}"
         text = formatDate
     }
 }
@@ -127,28 +119,27 @@ fun TextView.setSize(size: Int?) {
 }
 
 fun ImageView.setCommitAuthorAvatar(url: String?) {
-    if (url != null) {
-        Glide.with(this.context)
-            .load(url)
-            .into(this)
-    } else {
-        Glide.with(this.context)
-            .load(R.drawable.ic_commit)
-            .into(this)
-    }
+    Glide.with(this.context)
+        .load(url ?: R.drawable.ic_commit)
+        .into(this)
 }
 
 fun TextView.setCommitSha(commitsSha: String) {
-    text = commitsSha.substring(0..6)
+    text = formatSha(commitsSha)
 }
 
 fun TextView.setCommitDate(author: String?, date: String) {
-    val text = "$author committed ${date.substring(
+    val text = "$author committed ${formatDate(date)}"
+    setText(text)
+}
+
+fun formatDate(date: String): String =
+    "${date.substring(
         8..9
     )}.${date.substring(
         5..6
     )}.${date.substring(
         0..3
     )}"
-    setText(text)
-}
+
+fun formatSha(commitsSha: String) = commitsSha.substring(0..6)

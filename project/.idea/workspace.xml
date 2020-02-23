@@ -37,65 +37,7 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/test/java/ru/steeloscar/gitinfocleanarchitecture/UtilTest.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-              <folding>
-                <element signature="e#48#241#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/test/java/ru/steeloscar/gitinfocleanarchitecture/MapperTest.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-              <folding>
-                <element signature="e#48#434#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/commons/Util.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="127" column="32" lean-forward="true" selection-start-line="127" selection-start-column="32" selection-end-line="127" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/data/mapper/ArrayListRepositoryCommitEntityMapper.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="39" lean-forward="true" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
-              <folding>
-                <element signature="e#60#327#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/presenter/StartPresenterImpl.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="27" selection-start-line="21" selection-start-column="9" selection-end-line="27" />
-              <folding>
-                <element signature="e#71#673#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -179,143 +121,10 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Problems'; set:Problems; class com.intellij.psi.search.scope.ProblemsScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView">
-        <subPane>
-          <expand>
-            <path>
-              <item name="GitInfoCleanArchitecture" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="GitInfoCleanArchitecture" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="GitInfoCleanArchitecture" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="gitinfocleanarchitecture" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GitInfoCleanArchitecture" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="gitinfocleanarchitecture" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="commons" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GitInfoCleanArchitecture" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="gitinfocleanarchitecture" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GitInfoCleanArchitecture" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="gitinfocleanarchitecture" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GitInfoCleanArchitecture" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="gitinfocleanarchitecture" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GitInfoCleanArchitecture" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="gitinfocleanarchitecture" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-              <item name="sharedPreferences" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GitInfoCleanArchitecture" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="gitinfocleanarchitecture" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GitInfoCleanArchitecture" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="gitinfocleanarchitecture" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GitInfoCleanArchitecture" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="gitinfocleanarchitecture" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="interactor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GitInfoCleanArchitecture" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="gitinfocleanarchitecture" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="presenter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GitInfoCleanArchitecture" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="gitinfocleanarchitecture" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GitInfoCleanArchitecture" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="gitinfocleanarchitecture" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="presentation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GitInfoCleanArchitecture" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="gitinfocleanarchitecture" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="presentation" type="462c0819:PsiDirectoryNode" />
-              <item name="presenter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GitInfoCleanArchitecture" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="gitinfocleanarchitecture" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="presentation" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GitInfoCleanArchitecture" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="gitinfocleanarchitecture" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GitInfoCleanArchitecture" type="1abcf292:AndroidViewProjectNode" />
-              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
@@ -355,7 +164,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Android JUnit.MapperTest.arrayListRepositoryCommitToEntity">
+  <component name="RunManager" selected="Android App.app">
     <configuration name="ExampleUnitTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="app" />
       <extension name="coverage">
@@ -539,10 +348,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" sideWeight="0.5024077" side_tool="true" weight="0.2489339" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.4975923" visible="true" weight="0.2489339" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.4975923" visible="true" weight="0.24604847" />
       <window_info id="Structure" order="2" sideWeight="0.5005417" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -550,7 +358,6 @@
       <window_info id="Designer" order="6" />
       <window_info id="Resources Explorer" order="7" />
       <window_info id="Capture Tool" order="8" />
-      <window_info anchor="bottom" id="GitHub Pull Requests" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.6749729" />
       <window_info anchor="bottom" id="Logcat" order="1" weight="0.32936078" />
       <window_info anchor="bottom" id="TODO" order="2" />
@@ -561,6 +368,7 @@
       <window_info anchor="bottom" id="Android Profiler" order="7" weight="0.32936078" />
       <window_info anchor="bottom" id="Run" order="8" sideWeight="0.49946696" visible="true" weight="0.40953413" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.41603467" />
+      <window_info anchor="bottom" id="GitHub Pull Requests" order="10" weight="0.32936078" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" weight="0.32995737" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" />
@@ -632,6 +440,20 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add test implementation JUnit" />
@@ -650,430 +472,56 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/domain/entity/UserRepositoryEntity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/domain/entity/UserProfileEntity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/domain/entity/UpdateUserProfileEntity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/domain/entity/RepositoryCommitEntity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="71" lean-forward="true" selection-start-line="2" selection-start-column="71" selection-end-line="2" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/domain/entity/AccessTokenEntity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="50" lean-forward="true" selection-start-column="50" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/mapper/ArrayListUserMapper.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/mapper/ArrayListRepositoryUIMapper.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-          <folding>
-            <element signature="e#68#295#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/mapper/ArrayListCommitUIMapper.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="94" lean-forward="true" selection-start-line="7" selection-start-column="94" selection-end-line="7" selection-end-column="94" />
-          <folding>
-            <element signature="e#68#299#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/view/EditProfileActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-434">
-          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-          <folding>
-            <element signature="e#66#955#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/view/viewPagerFragments/StarsFragment.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-544">
-          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-          <folding>
-            <element signature="e#85#737#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/presenter/RepositoriesPresenterImpl.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="38" column="31" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_start.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-697" />
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/domain/presenter/OverviewPresenter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/domain/interactor/GetUserProfileInteractor.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/presenter/EditProfilePresenterImpl.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="18" column="70" selection-start-line="18" selection-start-column="70" selection-end-line="18" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/view/base/FragmentView.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/view/viewPagerFragments/OverviewFragment.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/presenter/OverviewPresenterImpl.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-111">
-          <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_overview.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="355" lean-forward="true" selection-start-line="355" selection-end-line="355" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/view/base/BaseActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/repository_recycler_view_layout.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="21" column="44" lean-forward="true" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/view/adapters/CommitsRecyclerAdapter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-          <folding>
-            <element signature="e#76#430#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/domain/interactor/GetOtherUserProfileInteractor.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-          <folding>
-            <element signature="e#66#480#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/domain/interactor/GetFollowersInteractor.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="70" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="70" />
-          <folding>
-            <element signature="e#66#402#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/view/StartActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="38" column="28" lean-forward="true" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
-          <folding>
-            <element signature="e#66#715#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/data/StartRepositoryImpl.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/domain/repository/MainRepository.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="e#66#509#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/data/repository/api/provider/GitHubApiSourceProvider.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/domain/interactor/LoginInteractor.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-          <folding>
-            <element signature="e#66#485#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/domain/repository/StartRepository.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding>
-            <element signature="e#66#174#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/data/repository/StartRepositoryImpl.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="44" lean-forward="true" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
-          <folding>
-            <element signature="e#64#505#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/domain/presenter/StartPresenter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/data/repository/sharedPreferences/CustomSharedPreferences.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="40" lean-forward="true" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/domain/interactor/LogoutInteractor.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding>
-            <element signature="e#66#228#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/view/MainActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
-          <folding>
-            <element signature="e#66#979#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/presenter/MainPresenterImpl.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#71#475#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/data/repository/MainRepositoryImpl.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="61" selection-start-line="32" selection-start-column="61" selection-end-line="32" selection-end-column="61" />
-          <folding>
-            <element signature="e#64#889#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/view/viewPagerFragments/RepositoriesFragment.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/view/adapters/FollowRecyclerAdapter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/view/adapters/MainViewPagerAdapter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/view/adapters/StarsRecyclerAdapter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/view/adapters/RepositoriesRecyclerAdapter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="29" column="60" selection-start-line="29" selection-start-column="60" selection-end-line="29" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="49" column="51" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/commons/GitInfoPreferences.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-          <folding>
-            <element signature="e#56#200#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/presenter/StartPresenterImpl.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="27" selection-start-line="21" selection-start-column="9" selection-end-line="27" />
-          <folding>
-            <element signature="e#71#673#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/test/java/ru/steeloscar/gitinfocleanarchitecture/ExampleUnitTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding>
-            <element signature="e#48#96#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/data/mapper/ArrayListRepositoryCommitEntityMapper.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="39" lean-forward="true" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
-          <folding>
-            <element signature="e#60#327#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/commons/Util.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="127" column="32" lean-forward="true" selection-start-line="127" selection-start-column="32" selection-end-line="127" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/test/java/ru/steeloscar/gitinfocleanarchitecture/UtilTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-          <folding>
-            <element signature="e#48#241#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/test/java/ru/steeloscar/gitinfocleanarchitecture/MapperTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding>
-            <element signature="e#48#434#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/domain/entity/UserRepositoryEntity.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/domain/entity/UserProfileEntity.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/domain/entity/UpdateUserProfileEntity.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/domain/entity/RepositoryCommitEntity.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/domain/entity/AccessTokenEntity.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/mapper/ArrayListUserMapper.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/mapper/ArrayListRepositoryUIMapper.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/mapper/ArrayListCommitUIMapper.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/view/EditProfileActivity.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/view/viewPagerFragments/StarsFragment.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/presenter/RepositoriesPresenterImpl.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_start.xml" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/domain/presenter/OverviewPresenter.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/domain/interactor/GetUserProfileInteractor.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/presenter/EditProfilePresenterImpl.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/view/base/FragmentView.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/view/viewPagerFragments/OverviewFragment.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/presenter/OverviewPresenterImpl.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_overview.xml" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/view/base/BaseActivity.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/repository_recycler_view_layout.xml" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/view/adapters/CommitsRecyclerAdapter.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/domain/interactor/GetOtherUserProfileInteractor.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/domain/interactor/GetFollowersInteractor.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/view/StartActivity.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/data/StartRepositoryImpl.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/domain/repository/MainRepository.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/data/repository/api/provider/GitHubApiSourceProvider.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/domain/interactor/LoginInteractor.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/domain/repository/StartRepository.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/data/repository/StartRepositoryImpl.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/domain/presenter/StartPresenter.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/data/repository/sharedPreferences/CustomSharedPreferences.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/domain/interactor/LogoutInteractor.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/view/MainActivity.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/presenter/MainPresenterImpl.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/data/repository/MainRepositoryImpl.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/view/viewPagerFragments/RepositoriesFragment.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/view/adapters/FollowRecyclerAdapter.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/view/adapters/MainViewPagerAdapter.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/view/adapters/StarsRecyclerAdapter.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/view/adapters/RepositoriesRecyclerAdapter.kt" />
+    <entry file="file://$PROJECT_DIR$/app/build.gradle" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/commons/GitInfoPreferences.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/presentation/presenter/StartPresenterImpl.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/ru/steeloscar/gitinfocleanarchitecture/ExampleUnitTest.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/data/mapper/ArrayListRepositoryCommitEntityMapper.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/steeloscar/gitinfocleanarchitecture/commons/Util.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/ru/steeloscar/gitinfocleanarchitecture/UtilTest.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/ru/steeloscar/gitinfocleanarchitecture/MapperTest.kt" />
   </component>
 </project>

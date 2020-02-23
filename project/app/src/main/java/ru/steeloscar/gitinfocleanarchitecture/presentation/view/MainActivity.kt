@@ -12,6 +12,8 @@ import androidx.fragment.app.FragmentPagerAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 import ru.steeloscar.gitinfocleanarchitecture.R
 import ru.steeloscar.gitinfocleanarchitecture.commons.AppConstants
+import ru.steeloscar.gitinfocleanarchitecture.commons.GitInfoPreferences
+import ru.steeloscar.gitinfocleanarchitecture.data.repository.MainRepositoryImpl
 import ru.steeloscar.gitinfocleanarchitecture.presentation.presenter.MainPresenterImpl
 import ru.steeloscar.gitinfocleanarchitecture.presentation.view.adapters.MainViewPagerAdapter
 import ru.steeloscar.gitinfocleanarchitecture.presentation.view.base.ActivityView
@@ -20,9 +22,14 @@ import ru.steeloscar.gitinfocleanarchitecture.presentation.view.viewPagerFragmen
 
 class MainActivity : BaseActivity<MainPresenterImpl>(), ActivityView.Main {
 
-    override var presenter =  MainPresenterImpl()
+    override lateinit var presenter: MainPresenterImpl
 
     override fun getLayout(): Int = R.layout.activity_main
+
+    init {
+        MainRepositoryImpl.newInstance(GitInfoPreferences.getTokenAPI())
+        presenter =  MainPresenterImpl()
+    }
 
     override fun initializeView() {
         toolbar.navigationIcon =

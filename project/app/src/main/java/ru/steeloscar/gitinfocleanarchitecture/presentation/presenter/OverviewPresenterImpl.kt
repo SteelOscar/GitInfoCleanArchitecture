@@ -1,6 +1,6 @@
 package ru.steeloscar.gitinfocleanarchitecture.presentation.presenter
 
-import ru.steeloscar.gitinfocleanarchitecture.data.repository.RepositoryImpl
+import ru.steeloscar.gitinfocleanarchitecture.data.repository.MainRepositoryImpl
 import ru.steeloscar.gitinfocleanarchitecture.domain.entity.UserProfileEntity
 import ru.steeloscar.gitinfocleanarchitecture.domain.interactor.GetUserProfileInteractor
 import ru.steeloscar.gitinfocleanarchitecture.domain.presenter.OverviewPresenter
@@ -12,7 +12,7 @@ import ru.steeloscar.gitinfocleanarchitecture.presentation.view.viewPagerFragmen
 
 class OverviewPresenterImpl private constructor(): BasePresenter<FragmentView.Overview>(), OverviewPresenter {
 
-    private val interactor = GetUserProfileInteractor(this, RepositoryImpl.getInstance())
+    private val interactor = GetUserProfileInteractor(this, MainRepositoryImpl.getInstance())
 
     fun loadingData() {
         getView().showProgress()

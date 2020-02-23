@@ -1,47 +1,20 @@
 package ru.steeloscar.gitinfocleanarchitecture.data.repository
 
-import android.content.SharedPreferences
 import io.reactivex.Observable
-import ru.steeloscar.gitinfocleanarchitecture.commons.AppConstants
 import ru.steeloscar.gitinfocleanarchitecture.commons.GitInfoPreferences
 import ru.steeloscar.gitinfocleanarchitecture.data.mapper.*
-import ru.steeloscar.gitinfocleanarchitecture.data.repository.api.provider.GitHubApiSourceProvider
-import ru.steeloscar.gitinfocleanarchitecture.data.repository.api.body.AccessTokenBody
-import ru.steeloscar.gitinfocleanarchitecture.data.repository.api.model.RepositoryCommit
 import ru.steeloscar.gitinfocleanarchitecture.data.repository.api.model.UserRepository
-import ru.steeloscar.gitinfocleanarchitecture.data.repository.sharedPreferences.CustomSharedPreferences
-import ru.steeloscar.gitinfocleanarchitecture.domain.entity.*
-import ru.steeloscar.gitinfocleanarchitecture.domain.repository.Repository
+import ru.steeloscar.gitinfocleanarchitecture.data.repository.api.provider.GitHubApiSourceProvider
+import ru.steeloscar.gitinfocleanarchitecture.domain.entity.RepositoryCommitEntity
+import ru.steeloscar.gitinfocleanarchitecture.domain.entity.UpdateUserProfileEntity
+import ru.steeloscar.gitinfocleanarchitecture.domain.entity.UserProfileEntity
+import ru.steeloscar.gitinfocleanarchitecture.domain.entity.UserRepositoryEntity
+import ru.steeloscar.gitinfocleanarchitecture.domain.repository.MainRepository
 import ru.steeloscar.gitinfocleanarchitecture.presentation.presenter.*
 
-class RepositoryImpl(sharedPreferences: SharedPreferences): Repository {
-
-    private val preferences =
-        CustomSharedPreferences(sharedPreferences)
+class MainRepositoryImpl private constructor(private val token: String): MainRepository {
 
     private val gitHubAPI = GitHubApiSourceProvider.getAPI()
-    private var token = "token ${GitInfoPreferences.getToken()}"
-
-    private fun updateToken(){
-        token = "token ${GitInfoPreferences.getToken()}"
-    }
-
-    override fun getToken(authenticateCode: String): Observable<AccessTokenEntity> =
-        gitHubAPI.getAccessToken("https://github.com/login/oauth/access_token","application/json",
-            AccessTokenBody(
-                AppConstants.CLIENT_ID,
-                AppConstants.CLIENT_SECRET,
-                authenticateCode,
-                AppConstants.REDIRECT_URI
-            )
-        ).map {
-            AccessTokenEntity(it.accessToken)
-        }
-
-    override fun setTokenSharedPreferences(token: String) {
-        preferences.setToken(token)
-        updateToken()
-    }
 
     override fun getUserProfile(): Observable<UserProfileEntity> =
         UserProfileEntityMapper.map( gitHubAPI.getUser(token))
@@ -67,7 +40,6 @@ class RepositoryImpl(sharedPreferences: SharedPreferences): Repository {
         UserProfileEntityMapper.map( gitHubAPI.updateProfile(UpdateUserProfileEntityMapper.forwardMap(updateUserProfileEntity), token))
 
     override fun clearData() {
-        setTokenSharedPreferences("")
         OverviewPresenterImpl.clearData()
         RepositoriesPresenterImpl.clearData()
         StarsPresenterImpl.clearData()
@@ -77,13 +49,13 @@ class RepositoryImpl(sharedPreferences: SharedPreferences): Repository {
     }
 
     companion object {
-        private var instance: RepositoryImpl? = null
+        private var instance: MainRepositoryImpl? = null
 
-        fun newInstance(sharedPreferences: SharedPreferences): RepositoryImpl {
-            if (instance == null) instance = RepositoryImpl(sharedPreferences)
-            return instance as RepositoryImpl
+        fun newInstance(token: String): MainRepositoryImpl {
+            if (instance == null) instance = MainRepositoryImpl(token)
+            return instance!!
         }
 
-        fun getInstance(): RepositoryImpl = instance as RepositoryImpl
+        fun getInstance(): MainRepositoryImpl = instance!!
     }
 }

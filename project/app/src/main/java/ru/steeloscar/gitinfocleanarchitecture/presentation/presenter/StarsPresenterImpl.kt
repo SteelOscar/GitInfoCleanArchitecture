@@ -1,6 +1,6 @@
 package ru.steeloscar.gitinfocleanarchitecture.presentation.presenter
 
-import ru.steeloscar.gitinfocleanarchitecture.data.repository.RepositoryImpl
+import ru.steeloscar.gitinfocleanarchitecture.data.repository.MainRepositoryImpl
 import ru.steeloscar.gitinfocleanarchitecture.data.repository.api.model.UserRepository
 import ru.steeloscar.gitinfocleanarchitecture.domain.interactor.GetStarsInteractor
 import ru.steeloscar.gitinfocleanarchitecture.domain.presenter.StarsPresenter
@@ -12,7 +12,7 @@ import java.util.*
 
 class StarsPresenterImpl private constructor():  BasePresenter<FragmentView.Stars>(), StarsPresenter{
 
-    private val interactor = GetStarsInteractor(this, RepositoryImpl.getInstance())
+    private val interactor = GetStarsInteractor(this, MainRepositoryImpl.getInstance())
 
     fun refreshData() {
         getView().showRefresh()

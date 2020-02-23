@@ -5,9 +5,9 @@ import io.reactivex.schedulers.Schedulers
 import ru.steeloscar.gitinfocleanarchitecture.domain.entity.UserProfileEntity
 import ru.steeloscar.gitinfocleanarchitecture.domain.interactor.base.BaseInteractor
 import ru.steeloscar.gitinfocleanarchitecture.domain.presenter.FollowPresenter
-import ru.steeloscar.gitinfocleanarchitecture.domain.repository.Repository
+import ru.steeloscar.gitinfocleanarchitecture.domain.repository.MainRepository
 
-class GetOtherUserProfileInteractor(private val presenter: FollowPresenter, private val repository: Repository): BaseInteractor() {
+class GetOtherUserProfileInteractor(private val presenter: FollowPresenter, private val repository: MainRepository): BaseInteractor() {
 
     private var count = 0
 

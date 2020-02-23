@@ -1,16 +1,13 @@
 package ru.steeloscar.gitinfocleanarchitecture.domain.repository
 
 import io.reactivex.Observable
-import ru.steeloscar.gitinfocleanarchitecture.data.repository.api.body.UpdateUserProfileBody
-import ru.steeloscar.gitinfocleanarchitecture.data.repository.api.model.AccessToken
-import ru.steeloscar.gitinfocleanarchitecture.data.repository.api.model.RepositoryCommit
-import ru.steeloscar.gitinfocleanarchitecture.data.repository.api.model.UserProfile
 import ru.steeloscar.gitinfocleanarchitecture.data.repository.api.model.UserRepository
-import ru.steeloscar.gitinfocleanarchitecture.domain.entity.*
+import ru.steeloscar.gitinfocleanarchitecture.domain.entity.RepositoryCommitEntity
+import ru.steeloscar.gitinfocleanarchitecture.domain.entity.UpdateUserProfileEntity
+import ru.steeloscar.gitinfocleanarchitecture.domain.entity.UserProfileEntity
+import ru.steeloscar.gitinfocleanarchitecture.domain.entity.UserRepositoryEntity
 
-interface Repository {
-    fun getToken(authenticateCode: String): Observable<AccessTokenEntity>
-    fun setTokenSharedPreferences(token: String)
+interface MainRepository {
     fun getUserProfile(): Observable<UserProfileEntity>
     fun gerRepositories(): Observable<ArrayList<UserRepositoryEntity>>
     fun getRepositoryCommits(userRepository: String, repository: String): Observable<ArrayList<RepositoryCommitEntity>>

@@ -1,6 +1,6 @@
 package ru.steeloscar.gitinfocleanarchitecture.presentation.presenter
 
-import ru.steeloscar.gitinfocleanarchitecture.data.repository.RepositoryImpl
+import ru.steeloscar.gitinfocleanarchitecture.data.repository.MainRepositoryImpl
 import ru.steeloscar.gitinfocleanarchitecture.domain.entity.RepositoryCommitEntity
 import ru.steeloscar.gitinfocleanarchitecture.domain.entity.UserRepositoryEntity
 import ru.steeloscar.gitinfocleanarchitecture.domain.interactor.GetUserRepositoriesInteractor
@@ -15,7 +15,7 @@ import ru.steeloscar.gitinfocleanarchitecture.presentation.view.viewPagerFragmen
 
 class RepositoriesPresenterImpl private constructor(): BasePresenter<FragmentView.Repositories>(), RepositoryPresenter {
 
-    private val interactor = GetUserRepositoriesInteractor(this, RepositoryImpl.getInstance())
+    private val interactor = GetUserRepositoriesInteractor(this, MainRepositoryImpl.getInstance())
 
     fun refreshData() {
         getView().showRefresh()

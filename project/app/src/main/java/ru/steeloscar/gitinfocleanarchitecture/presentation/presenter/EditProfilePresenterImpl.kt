@@ -1,6 +1,6 @@
 package ru.steeloscar.gitinfocleanarchitecture.presentation.presenter
 
-import ru.steeloscar.gitinfocleanarchitecture.data.repository.RepositoryImpl
+import ru.steeloscar.gitinfocleanarchitecture.data.repository.MainRepositoryImpl
 import ru.steeloscar.gitinfocleanarchitecture.domain.entity.UserProfileEntity
 import ru.steeloscar.gitinfocleanarchitecture.domain.interactor.UpdateUserProfileInteractor
 import ru.steeloscar.gitinfocleanarchitecture.domain.presenter.EditProfilePresenter
@@ -12,7 +12,7 @@ import ru.steeloscar.gitinfocleanarchitecture.presentation.view.base.ActivityVie
 
 class EditProfilePresenterImpl: BasePresenter<ActivityView.Edit>(), EditProfilePresenter {
 
-    private val interactor = UpdateUserProfileInteractor(this, RepositoryImpl.getInstance())
+    private val interactor = UpdateUserProfileInteractor(this, MainRepositoryImpl.getInstance())
 
     fun editProfile(updateUserProfileUI: UpdateUserProfileUI){
         getView().showProgress()

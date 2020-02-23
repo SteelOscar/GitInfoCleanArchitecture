@@ -2,13 +2,12 @@ package ru.steeloscar.gitinfocleanarchitecture.domain.interactor
 
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
-import ru.steeloscar.gitinfocleanarchitecture.data.repository.api.model.UserRepository
 import ru.steeloscar.gitinfocleanarchitecture.domain.entity.UserRepositoryEntity
 import ru.steeloscar.gitinfocleanarchitecture.domain.interactor.base.BaseInteractor
 import ru.steeloscar.gitinfocleanarchitecture.domain.presenter.RepositoryPresenter
-import ru.steeloscar.gitinfocleanarchitecture.domain.repository.Repository
+import ru.steeloscar.gitinfocleanarchitecture.domain.repository.MainRepository
 
-class GetUserRepositoriesInteractor(private val presenter: RepositoryPresenter, private val repository: Repository): BaseInteractor()  {
+class GetUserRepositoriesInteractor(private val presenter: RepositoryPresenter, private val repository: MainRepository): BaseInteractor()  {
 
     fun execute() {
         disposables.add(repository.gerRepositories()

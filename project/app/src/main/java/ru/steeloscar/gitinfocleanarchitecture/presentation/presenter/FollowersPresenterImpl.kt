@@ -1,6 +1,6 @@
 package ru.steeloscar.gitinfocleanarchitecture.presentation.presenter
 
-import ru.steeloscar.gitinfocleanarchitecture.data.repository.RepositoryImpl
+import ru.steeloscar.gitinfocleanarchitecture.data.repository.MainRepositoryImpl
 import ru.steeloscar.gitinfocleanarchitecture.domain.entity.UserProfileEntity
 import ru.steeloscar.gitinfocleanarchitecture.domain.interactor.GetFollowersInteractor
 import ru.steeloscar.gitinfocleanarchitecture.domain.presenter.FollowPresenter
@@ -12,7 +12,7 @@ import ru.steeloscar.gitinfocleanarchitecture.presentation.view.viewPagerFragmen
 
 class FollowersPresenterImpl private constructor(): BasePresenter<FragmentView.Follow>(), FollowPresenter {
 
-    private val interactor = GetFollowersInteractor(this, RepositoryImpl.getInstance())
+    private val interactor = GetFollowersInteractor(this, MainRepositoryImpl.getInstance())
 
     fun refreshData() {
         getView().showRefresh()

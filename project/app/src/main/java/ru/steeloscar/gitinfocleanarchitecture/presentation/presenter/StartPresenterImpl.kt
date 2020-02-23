@@ -4,7 +4,7 @@ import android.content.Intent
 import android.net.Uri
 import ru.steeloscar.gitinfocleanarchitecture.commons.AppConstants
 import ru.steeloscar.gitinfocleanarchitecture.commons.GitInfoPreferences
-import ru.steeloscar.gitinfocleanarchitecture.data.repository.RepositoryImpl
+import ru.steeloscar.gitinfocleanarchitecture.data.repository.StartRepositoryImpl
 import ru.steeloscar.gitinfocleanarchitecture.domain.interactor.LoginInteractor
 import ru.steeloscar.gitinfocleanarchitecture.domain.presenter.StartPresenter
 import ru.steeloscar.gitinfocleanarchitecture.presentation.presenter.base.BasePresenter
@@ -13,11 +13,12 @@ import ru.steeloscar.gitinfocleanarchitecture.presentation.view.base.ActivityVie
 class StartPresenterImpl: BasePresenter<ActivityView.Start>(), StartPresenter {
 
     private lateinit var interactor: LoginInteractor
+    private lateinit var gitInfoPreferences: GitInfoPreferences
 
     fun checkToken(){
         with(getView().getSharedPreferences()){
-            GitInfoPreferences(this)
-            interactor = LoginInteractor(this@StartPresenterImpl, RepositoryImpl.newInstance(this))
+            gitInfoPreferences = GitInfoPreferences(this)
+            interactor = LoginInteractor(this@StartPresenterImpl, StartRepositoryImpl())
         }
         if (GitInfoPreferences.getToken() != null) {
             getView().startIntent(null)
@@ -57,6 +58,10 @@ class StartPresenterImpl: BasePresenter<ActivityView.Start>(), StartPresenter {
     override fun detachView() {
         super.detachView()
         interactor.clear()
+    }
+
+    override fun setToken(token: String) {
+        gitInfoPreferences.setTokenSharedPreferences(token)
     }
 
     override fun interactorCallback(message: String?) =

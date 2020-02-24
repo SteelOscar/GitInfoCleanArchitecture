@@ -1,13 +1,12 @@
 package ru.steeloscar.gitinfocleanarchitecture.data.mapper
 
-import io.reactivex.Observable
 import ru.steeloscar.gitinfocleanarchitecture.commons.BaseMapper
 import ru.steeloscar.gitinfocleanarchitecture.data.repository.api.model.UserProfile
 import ru.steeloscar.gitinfocleanarchitecture.domain.entity.UserProfileEntity
 
-object UserProfileEntityMapper: BaseMapper.OneWayMapper<Observable<UserProfile>, Observable<UserProfileEntity>> {
-    override fun map(type: Observable<UserProfile>): Observable<UserProfileEntity> {
-        return type.map {
+object UserProfileEntityMapper: BaseMapper.OneWayMapper<UserProfile, UserProfileEntity> {
+    override fun map(type: UserProfile): UserProfileEntity {
+        return type.let {
             UserProfileEntity(
                 it.avatar_url,
                 it.name,

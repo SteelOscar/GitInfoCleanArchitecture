@@ -17,7 +17,9 @@ class MainRepositoryImpl private constructor(private val token: String): MainRep
     private val gitHubAPI = GitHubApiSourceProvider.getAPI()
 
     override fun getUserProfile(): Observable<UserProfileEntity> =
-        UserProfileEntityMapper.map( gitHubAPI.getUser(token))
+        gitHubAPI.getUser(token).map {
+            UserProfileEntityMapper.map(it)
+        }
 
     override fun gerRepositories(): Observable<ArrayList<UserRepositoryEntity>>  =
         gitHubAPI.getRepositories(token).map {
@@ -37,7 +39,9 @@ class MainRepositoryImpl private constructor(private val token: String): MainRep
         }
 
     override fun getOtherUserProfile(login: String): Observable<UserProfileEntity> =
-        UserProfileEntityMapper.map(gitHubAPI.getUserInfo(login, token))
+        gitHubAPI.getUserInfo(login, token).map {
+            UserProfileEntityMapper.map(it)
+        }
 
     override fun getFollowingUsers(): Observable<ArrayList<UserProfileEntity>>  =
         gitHubAPI.getFollowingUsers(token).map {
@@ -45,7 +49,9 @@ class MainRepositoryImpl private constructor(private val token: String): MainRep
         }
 
     override fun updateUserProfile(updateUserProfileEntity: UpdateUserProfileEntity): Observable<UserProfileEntity> =
-        UserProfileEntityMapper.map( gitHubAPI.updateProfile(UpdateUserProfileEntityMapper.forwardMap(updateUserProfileEntity), token))
+        gitHubAPI.updateProfile(UpdateUserProfileEntityMapper.forwardMap(updateUserProfileEntity), token).map {
+            UserProfileEntityMapper.map(it)
+        }
 
     override fun clearData() {
         OverviewPresenterImpl.clearData()

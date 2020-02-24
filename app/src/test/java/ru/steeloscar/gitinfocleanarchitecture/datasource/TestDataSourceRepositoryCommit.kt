@@ -2,6 +2,7 @@ package ru.steeloscar.gitinfocleanarchitecture.datasource
 
 import ru.steeloscar.gitinfocleanarchitecture.data.repository.api.model.RepositoryCommit
 import ru.steeloscar.gitinfocleanarchitecture.domain.entity.RepositoryCommitEntity
+import ru.steeloscar.gitinfocleanarchitecture.presentation.model.RepositoryCommitUI
 
 object TestDataSourceRepositoryCommit {
 
@@ -265,6 +266,25 @@ object TestDataSourceRepositoryCommit {
                         null
                     )
                 )
+            )
+        )
+    }
+
+    fun getRepositoryCommitsUI(): ArrayList<RepositoryCommitUI> {
+        return arrayListOf(
+            RepositoryCommitUI(
+                "message1",
+                "date1",
+                "123456789qwerty123456789qwerty1234567890",
+                "avatar_url1",
+                "login1"
+            ),
+            RepositoryCommitUI(
+                "message2",
+                "date2",
+                "123456789qwerty123456789qwerty1234567890",
+                "avatar_url2",
+                "login2"
             )
         )
     }

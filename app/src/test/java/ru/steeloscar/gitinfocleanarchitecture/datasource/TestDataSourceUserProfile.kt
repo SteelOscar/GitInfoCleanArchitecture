@@ -3,6 +3,7 @@ package ru.steeloscar.gitinfocleanarchitecture.datasource
 import ru.steeloscar.gitinfocleanarchitecture.data.repository.api.model.UserProfile
 import ru.steeloscar.gitinfocleanarchitecture.data.repository.api.model.UserProfile.UserPlan
 import ru.steeloscar.gitinfocleanarchitecture.domain.entity.UserProfileEntity
+import ru.steeloscar.gitinfocleanarchitecture.presentation.model.UserProfileUI
 
 object TestDataSourceUserProfile {
 
@@ -147,7 +148,56 @@ object TestDataSourceUserProfile {
                 2,
                 true,
                 null
-                )
+            )
+        )
+    }
+
+    fun getUserProfilesUI(): ArrayList<UserProfileUI> {
+        return arrayListOf(
+            UserProfileUI(
+                "avatar_url1",
+                "name1",
+                "login1",
+                "email1",
+                "blog1",
+                "company1",
+                "location1",
+                "updated1",
+                "created1",
+                "bio1",
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                true,
+                null
+            ),
+            UserProfileUI(
+                "avatar_url2",
+                "name2",
+                "login2",
+                "email2",
+                "blog2",
+                "company2",
+                "location2",
+                "updated2",
+                "created2",
+                "bio2",
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                true,
+                null
+            )
         )
     }
 }

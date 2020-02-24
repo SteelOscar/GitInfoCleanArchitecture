@@ -2,6 +2,7 @@ package ru.steeloscar.gitinfocleanarchitecture.datasource
 
 import ru.steeloscar.gitinfocleanarchitecture.data.repository.api.model.UserRepository
 import ru.steeloscar.gitinfocleanarchitecture.domain.entity.UserRepositoryEntity
+import ru.steeloscar.gitinfocleanarchitecture.presentation.model.UserRepositoryUI
 
 object TestDataSourceUserRepository {
 
@@ -251,6 +252,37 @@ object TestDataSourceUserRepository {
                 descriptionRepo = "descr2",
                 ownerLogin = "login2",
                 name = "name2"
+            )
+        )
+    }
+
+    fun getUserRepositoriesUI(): ArrayList<UserRepositoryUI> {
+        return arrayListOf(
+            UserRepositoryUI(
+                "full_name1",
+                forkRepo = false,
+                archivedRepo = false,
+                privateRepo = false,
+                starCnt = 1,
+                watchCnt = 1,
+                language = null,
+                createdDate = "created_at1",
+                updateDate = "updated_at1",
+                sizeRepo = 1,
+                descriptionRepo = "descr1"
+            ),
+            UserRepositoryUI(
+                "full_name2",
+                forkRepo = false,
+                archivedRepo = false,
+                privateRepo = false,
+                starCnt = 2,
+                watchCnt = 2,
+                language = null,
+                createdDate = "created_at2",
+                updateDate = "updated_at2",
+                sizeRepo = 2,
+                descriptionRepo = "descr2"
             )
         )
     }

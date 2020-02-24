@@ -4,7 +4,8 @@ import ru.steeloscar.gitinfocleanarchitecture.commons.BaseMapper
 import ru.steeloscar.gitinfocleanarchitecture.data.repository.api.model.UserProfile
 import ru.steeloscar.gitinfocleanarchitecture.domain.entity.UserProfileEntity
 
-object UserProfileEntityMapper: BaseMapper.OneWayMapper<UserProfile, UserProfileEntity> {
+
+object UserProfileEntityMapper: BaseMapper.OneWayMapper<UserProfile, UserProfileEntity>{
     override fun map(type: UserProfile): UserProfileEntity {
         return type.let {
             UserProfileEntity(
